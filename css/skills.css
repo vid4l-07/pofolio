@@ -22,9 +22,9 @@
     white-space: nowrap;
     text-align: center;
 
-    opacity: 0;           /* oculto al inicio */
-    visibility: hidden;   /* no ocupa espacio */
-    transition: opacity 0.5s;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.7s;
 }
 
 .skill {
@@ -170,30 +170,36 @@
 }
 
 .hacking {
-    background-color: #bb432173;
-    box-shadow: #b33b1a 0px 0px 20px;
+    background-color: #e5393573;
+    box-shadow: #e5393550 0px 0px 50px;
 }
 
+.icon-hacking {
+    background-image: url(../img/security.png);
+}
 
 .name-hacking {
-    color: #30A9DC;
-    border-color: #30A9DC;
+    color: #e53935;
+    border-color: #e53935;
 }
 
 .hacking:hover {
-    box-shadow: #e54c21 0px 0px 30px;
+    box-shadow: #e54c2188 0px 0px 30px;
     border-color: #e54c21;
 }
 
-.soft {
-    background-color: #bb432173;
-    box-shadow: #b33b1a 0px 0px 20px;
+.soft-grp {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    /* text-align: center; */
+    grid: auto / 7rem 7rem 7rem;
+    gap: 50px 50px;
+    border-radius: 10px;
+    padding: 0 10px;
+    list-style-type: circle;
 }
 
-.soft:hover {
-    box-shadow: #e54c21 0px 0px 30px;
-    border-color: #e54c21;
-}
 
 
 

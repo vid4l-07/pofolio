@@ -2,8 +2,8 @@
     --primary: #3b82f6;
     --primary2: #275399;
     --primary2-trans: #27539967;
-    /* --secondary: #7178ff; */
-    --secondary: #F5B83B;
+    --secondary: #7178ff;
+    /* --secondary: #F5B83B; */
     --bg: #080a21;
     --bg-sec: #020416;
     --bg2: #26262a99;
@@ -385,8 +385,6 @@ h2 {
 }
 
 
-
-
 .oculto {
     /* display: none; */
     max-height: 0;
@@ -419,3 +417,6 @@ h2 {
     background-color: var(--bg2);
     border-color: var(--primary);
 }
+
+
+
