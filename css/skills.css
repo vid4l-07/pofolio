@@ -8,8 +8,37 @@
     user-select: none;
 }
 
+.skill-name {
+    position: absolute;
+    bottom: 115%;        /*lo coloca encima del icono */
+    left: 50%;
+    transform: translateX(-50%);
+    background: black;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 8px;
+    border: solid 1px;
+    font-size: 17px;
+    white-space: nowrap;
+    text-align: center;
+
+    opacity: 0;           /* oculto al inicio */
+    visibility: hidden;   /* no ocupa espacio */
+    transition: opacity 0.5s;
+}
 
 .skill {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+
+.skill:hover .skill-name {
+  opacity: 1;
+  visibility: visible;
+}
+
+.skill-icon-bg {
     /* border: solid 2px var(--border); */
     border-radius: 20px;
     border: solid 1.5px #00000000;
@@ -30,6 +59,11 @@
     background-image: url(../img/html5.svg);
 }
 
+.name-html {
+    color: #e54b21;
+    border-color: #e54b21;
+}
+
 .html {
     background-color: #ef652a4b;
     box-shadow: #ef652a40 0px 0px 50px;
@@ -42,6 +76,11 @@
 
 .icon-css {
     background-image: url(../img/css.svg);
+}
+
+.name-css {
+    color: #30A9DC;
+    border-color: #30A9DC;
 }
 
 .css {
@@ -58,6 +97,11 @@
     background-image: url(../img/bash.png);
 }
 
+.name-bash {
+    color: #4eaa25;
+    border-color: #4eaa25;
+}
+
 .bash {
     background-color: #4eaa2573;
     box-shadow: #4eaa2550 0px 0px 50px;
@@ -70,6 +114,11 @@
 
 .icon-python {
     background-image: url(../img/python.svg);
+}
+
+.name-python {
+    color: #ffde57;
+    border-color: #ffde57;
 }
 
 .python {
@@ -86,6 +135,11 @@
     background-image: url(../img/linux.png);
 }
 
+.name-linux {
+    color: #DFAF22;
+    border-color: #DFAF22;
+}
+
 .linux {
     background-color: #DFAF2273;
     box-shadow: #DFAF2250 0px 0px 50px;
@@ -98,6 +152,11 @@
 
 .icon-wifi {
     background-image: url(../img/wifi.png);
+}
+
+.name-wifi {
+    color: #30A9DC;
+    border-color: #30A9DC;
 }
 
 .wifi {
@@ -113,6 +172,12 @@
 .hacking {
     background-color: #bb432173;
     box-shadow: #b33b1a 0px 0px 20px;
+}
+
+
+.name-hacking {
+    color: #30A9DC;
+    border-color: #30A9DC;
 }
 
 .hacking:hover {
