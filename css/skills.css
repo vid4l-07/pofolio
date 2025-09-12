@@ -1,0 +1,151 @@
+.skill-logo {
+    position: relative;
+    width: 3.3em;
+    height: 3.3em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+}
+
+
+.skill {
+    /* border: solid 2px var(--border); */
+    border-radius: 20px;
+    border: solid 1.5px #00000000;
+    padding: 0 13px;
+    transition: box-shadow 0.7s, border-color 0.7s;
+}
+
+.skill-icon {
+    width: 40px;
+    height: 32px;
+    display: block;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+}
+
+.icon-html {
+    background-image: url(../img/html5.svg);
+}
+
+.html {
+    background-color: #ef652a4b;
+    box-shadow: #ef652a40 0px 0px 50px;
+}
+
+.html:hover {
+    box-shadow: #e54b2188 0px 0px 30px;
+    border-color: #e54b21ab;
+}
+
+.icon-css {
+    background-image: url(../img/css.svg);
+}
+
+.css {
+    background-color: #30A9DC4b;
+    box-shadow: #30a8dc45 0px 0px 50px;
+}
+
+.css:hover {
+    box-shadow: #30A9DC88 0px 0px 30px;
+    border-color: #30A9DC;
+}
+
+.icon-bash {
+    background-image: url(../img/bash.png);
+}
+
+.bash {
+    background-color: #4eaa2573;
+    box-shadow: #4eaa2550 0px 0px 50px;
+}
+
+.bash:hover {
+    box-shadow: #72a82488 0px 0px 30px;
+    border-color: #72a824;
+}
+
+.icon-python {
+    background-image: url(../img/python.svg);
+}
+
+.python {
+    background-color: #ffde5750;
+    box-shadow: #ffde5740 0px 0px 50px;
+}
+
+.python:hover {
+    box-shadow: #ffde5788 0px 0px 30px;
+    border-color: #ffde57;
+}
+
+.icon-linux {
+    background-image: url(../img/linux.png);
+}
+
+.linux {
+    background-color: #DFAF2273;
+    box-shadow: #DFAF2250 0px 0px 50px;
+}
+
+.linux:hover {
+    box-shadow: #DFAF2288 0px 0px 30px;
+    border-color: #DFAF22;
+}
+
+.icon-wifi {
+    background-image: url(../img/wifi.png);
+}
+
+.wifi {
+    background-color: #30A9DC4b;
+    box-shadow: #30A9DC50 0px 0px 50px;
+}
+
+.wifi:hover {
+    box-shadow: #30A9DC88 0px 0px 30px;
+    border-color: #30A9DC;
+}
+
+.hacking {
+    background-color: #bb432173;
+    box-shadow: #b33b1a 0px 0px 20px;
+}
+
+.hacking:hover {
+    box-shadow: #e54c21 0px 0px 30px;
+    border-color: #e54c21;
+}
+
+.soft {
+    background-color: #bb432173;
+    box-shadow: #b33b1a 0px 0px 20px;
+}
+
+.soft:hover {
+    box-shadow: #e54c21 0px 0px 30px;
+    border-color: #e54c21;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

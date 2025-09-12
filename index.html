@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/particles.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/stars.css">
+    <link rel="stylesheet" href="css/skills.css">
+    <title>Hugo Vidal</title>
+</head>
+<body>
+    <header>
+        <nav class="bar">
+            <div class="bar-org">
+                <div class="flex">
+                    <!-- <img class="logo" src="img/logo.svg" alt="logo"> -->
+                    <svg class="logo" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="129px" height="121px" viewBox="0 0 129 121" enable-background="new 0 0 129 121" xml:space="preserve">
+                        <image overflow="visible" width="129" height="121" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIEAAAB5CAYAAAAeYUIkAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAALiMAAC4jAXilP3YAABSqSURBVHhe7Z0LVFRHmsebbh7KW4HmFUFB8MFDwZDoOr7GNXEziTFqAmHcZFyTzEncqJMxnsljcjYHM7M7JnqywbiZjHKyZk4y2TOJxqijk+QQfCAqRg0iD0ERaKAbaLqh393crf/tW9AwGhvpe4G2fsfrfXBv1b1V//rqq7pVt2UMBoPBYDAYDAaDwWAwGAwGg8FgMBgMBoPBYDAYDAaDwWAwGAzGzfAR1pITGhqVHBLiHxSnnBQXpYyKiYmPjQsJCgkxW82mpqbmpprKyxW112rPCKePGYKCgtJlMj95SkpqamZmekaMMlrZ02PoUbWqWq5fv3GjvV2ttlptVrW6+bRwyd1HeHh44oIFi1cXFu4+cPVqPWe19HIc+ee69HSbuZrqesfJ42XNGzZsLEhOnj5PuHzUEhYWmb1mTd7WA/sP/6DrMvDPYTE7uF7HwGdrUWm4v3z617MrV655KSwwbLZw+d3DvHnzHv7oo//9VqvVkRQZiMVi43S6bq6728DZ7UgxkmZkpe3Scwe/OnTx+Q0vFiRPH51iyM9f+/qRI8dqVapWrovcr8lk4e8f4BnwbAaDibNa7cJRjmtqUnGlpWWa5csfekEIxvvZsmXrjoqKSqOQBlxPj5Ezm61k3cPZbDbh6ECsVmtfIdK0d3Jv/e4/i0aTEOITkxe/9tpre0pLSzX8DQ/iZs9lt/cLAZz//qLutd++UTR16tQHhGC9k+ef31Bw9mx5pwOmkUBL+s0YnEg4U6fv6RPDXz//4mxiYuKIm9GpU9Me+O0bBUVmsxm3yYPt7u7uvmeAiLHvisVi4Y9T8EytbRru9//1h/9LTZ25XAjeewgLi56Sm/vkpkuXKnqcj8xx7aREU2AiTSZSf3JQh3Ox262cw4ESROrTXntf5tvJn7HuJhYE/kR6+uxFQjSSExERc+/GjVve5e+N3CPuF2vX56D3j+eh+4PPs1rNnJ5UfwgHlu6lLVt3xcZO+okQjXeQnp6+qKOjgy8Nrqaxl1SUWNylq6uLiMUk7BHnqqWFe+utt4qEaCRnxYoVL+GenBk6POhzIY0QZm5u7qtCNGOf+Pj4zO3v7PjUYDAMMH+AisAdIbiKB2aWhlVcXHx9/vz5jwnRSYZSqZx7+PDhaph1Z4kePnq9nl/jWY8cOVKbkJDwUyG6sc38+Qsfa+/Q3jSj3RUAoAkEjEYjqUJQfThLzo4dOz4TopOMxx/P/Q3id4rTMyLQaAb6lU899dSbQnRjm1//+uXtt8pmdwUAHMSbxEKhTheOVVZWmlNSZt4nRCk6/v7B09EURPwQpKdEAFyfC5Zm4sSJkj2XXFh7lJiYmBk/e/iR1RwnHCCQ55ORzOfXPj7ud1TK5XIZSRj+WqBQKGSkFPL7KSkpAUlEBfwfJCA+PvaeJUsWTyXWSebr6yscHR6kWuHXeCZAxCW77777UmNjY5X8AQkQRQSRkZHK+fP/aYrVauvLfGQktocKKSEyPz8/Xgy4Hgv2kQlYMtLTMoVTRSeTeLoBAX7EIvjz93AnzzMYiJo+EwgODpaNHz9eRprBSfwBCRBFBBHEe/LzU5DE8usr9VjThUJL94/hmtAQxGArkjo1dYawKTopKakpuOVx48bx+4Pv5U6AkM1mMy9yCo6lpqamCLuiI4oIiJpDtFodSSTnPh6QLq64IwJaQmBJUGoo1Iwqo5Ux/IYEhIWFheMRaHXkKVDySauH3yZOIm9p4gj8AQkQRQTj/PzGh4eFkGLsEI7cvNQMpV6FAFxFFBAQwK9JGJ6pnN2gl9Rs/JoIwJMiACaTiV8HBgbya51Op+c3JEAUEXgrOr1Ob7f38iXVk9pDNRceHs5vU3FLCRPBEKitralVKOR8He4p4PO4WhVUC9hvbW1VCYdEh4lgCFQQelEnkExC6fUEqCZhWXp6evh9iEKr1crKy8u/5w9IABPBEOhsU7efPHlSFRQU5DERUKjTi7CJAK7W1NRc5Q9IABPBENAZdRf2ErCN0usp0PJBC8FgMPD7Bw8e/MpoNF7gdySAiWCIFBd/+01JSUmTJ/oIKLQvBNbg2LFj9cXFxd/xBySCiWCINDQ0FL///vu7abveE6Clge5idEJ99NFHRcT12C/8SRLGvAhI+jl7kySkpORUyX+8+bs/cXzyoc/Azi/YpovDYSOtCGPf3+12iMb5N+xzfB8KaQW0aWSwAwpff9n2d3Z8Xnbu3DmyKyljXgSkPnW+eZGQlpbGE19/+/dvCt/74HBLS5tMLvflF7T0urr0JPOtxLT7kZIdSJp8dv5vviSTkdzoZ7BYbDKbDSKQy6Kjo/jrPvnk0xN7i/YW1dXU/I2PZKyzevXqDSRzOE+MvLkdxd+VXBeilZzk1JnLjx49WouRThTnYBPnK2GdTjdgQA3GILqOkAIYX0gswBdpaWkPC8F6B1KKoLrmKixBmDPmkcA/dd269RhI2/FjwyRIcvCjqykYll5ZWWXBtYmJiYuFwLwHKUXQqdVxERFx04SoR4z09Dkrt255Zffp0nINJp1g9Kihx8Jp1NoBE2w6O/Tcd8UnGl/a/PJ7aWmZo6L0e66d4wJE8NlnnxX6+GAASf+bPzEwmiyyJx5/Yv2hQ1/y7feRBjORoqOVyqysrOzs2dlZCYkJCSazydzc2NR05UrVlfq6uvrOTm1nTV2ld9T9t0JKS2Cz93J//OOeI0LUjDtgzLcOFAof2aLFix7A8HbhEGOIiCIC0gyyaElTSXabqoC+NBkOqM+SkybL165d+0x0dHS68yhjKIgiguuNDTfQF462MKkWSDvY+dYNvWyuL14wns4ToLs1Ly9v7aJFi5YIhxgjDb490NKq5noMA9vEgAiib3i1J0B4AD7I+fPnu7Kzs717YudYITAwMAYTR53Z059RFE8LAZ0ydH38+PHmWbNmMSEMAVHabzabrcdX4Re8avWqB2Ucxw/MRDUAs423b1gGDzq9U1DV4MUL5gKEhoZimljIggULVmo0Gr1ardabTKYO4VTGLRCtEd/Z2W1ctGhhXnxc7HhkPt6UIcNIgfWYAAAE1dXVhZHAvP+B9/yRkZEBS5YseYiII1it7uwycw5fi9GoFS5hDEI0EXR3d7Up5IrAhQsXLKKDJ5H51CIAiMIT7+UxLB3hYt3e3s47nFiIRZj987VrfzFtauocB8cFGA2WXhLrOHIfgeT8buHyux5RegwpmI62b9++g6QNn0y2+WOYL0BFgZJLBXGnoJlJWxkQALEC/HZHR4csIiJCZrE6J6z4+iqI6DgZqSJkzc2qdiICe2hIcJjVZvPcwICb0NsrJ1rvdeh0XdorVVcqzpw5c6ri0qULjWpVY4dKVS2c5t1k5eQs33/gy++FrnO+r59ukwwiDmL/Rxyw4EMO9EMV6HEc7oJw6OIabn+c5H/SssBCIZnGO66ux+6UweECvHXctWvXwaVLl+aSpvQ9QlKNGKJVB5RWleqq2WzhomPi0idPTpwwblyAzGAwEYtglY0fH0CqCNwCDJJz8fHBTCU4kHKPL67h9sdJ/hecVcqttu8EWD74QyTveQcZlg+WKycnJ/XRRx9dExWlTKyvv9Hc0aFpFC6RHNFFAKqqrpSXnDpROj5gXHx6emYKMj8gQBioSRIHvgFdwHAT3hVUOcgALAgfawriwTF0YmEuAc0k+C74myfug05SoXFBFNhGHGjVZGffO5O0aKapVM3qpqamGv5kiZFEBKCrs7O5pOx02cXy8zVxcXGZsbHxod3dPSRB5CThMfKmP/E9iTNMagnouj+DIRK0KOgCISCjcC4WTwDhIT4IDM4rwkU8EB8KQ0ZGWkJcXHxWfX19w0gIQTIRADTTrlypPPvl0b8dPne6rJLzkQVGR8VOQeFUyDHV20dmMllkhh6TzGqxyxx2TmYxk8Qi23e62KwOsmAbiU72bWSfLHYburJ7SSY4hyjCElCnFQvNqOE6rgAWgPgYA8KigsC9IK6UlKlREydGTC8uPnnKYNCrhdMkwbPFboigZ5GUkN5ARWBI4ITwEOI6yUlGmRxGo5Xz5+T+nL/cOff4ziEJLZfbSI670EuOYU3cNkVCAj48sWQ5qZ9zs7KyYvDOg+LakvEEsDoQGwSBcOkUd8zgnjAhjB+bWFBQsKuw8IOder2mjv8jQzogyDlz5jxUWFh4AF9c8xT0G0u3A5/zA/X117klS/75SeG2JEHS6mA0Q0x/D2m61ZaXl1dcu3atMTQ0NHny5MkThuujwOQDkr989YLwaJiwNPCFMcmV+irjxwdiboO6pOS7Q/xJjJFjwYKlq48c+aYSpbO9vR0rvu+Ajh4mGcivhwvxF/hwAREJv75w4YKeOM9338evRyMQwuHDh3kh4BvMAJlPMwtDyD0BFRYVQ2NjI5eTk+NdQ9DHMsuWLVvb2tral0HoAaSZ7ykR0LkItHcRQsvPz/+VcAui47nXeV7KiRMnit9+++2daNJhviCac/DsnW18z7QcSL7za9ovgf4KUh1M4nckgIngNpBS2rRv3769ly9fNlEnD0AQnsK1/wDiAsHBwSH8hgQwEbhBW1tbxYcffvgeREA/MOUpK4A+A1dxARwjDuOAvg0xGbHOopiYe3KCg8PDJyXGTYqNjYmLUSqjScL6k/rQqlar2y5frqysqamrNhi0l4VLRhQMaS8rKytG3uAFEDp+PNGbSMNBuLQ6gAjefPPN3du2bfPOX0WJi0uct2LF6o1FRR8X19U3clabo+/VMrbxuwZ4xXy9oZErLjlxI3/tL17PyLh3hXD5iJGQkJB9/PjxRuoMUo9+uKCJCAY3OV999dVCIWrvgjR7njh06FAVmli0meUOVVVVtvXr1xcEBQWlCUGNCIX//T+fC7fE4xyXMHwgBNoywBr7BQUFe4RoRUcSnyAiIiJn8+bN73788cd/Jk2uaUT1fR7x7cC5KSkpvtu3b399586d7xKz/DPhT5JDzPSAr1W5+wyjHdFFEB4ePuvpp59+6pVXXtmYmprqCycIX+jCmnrCPwZtjk2YMEH27LPPLn3xxRc3ZWRkjEj1YLVb7aSg8plPF29AdBE89thja15++eV/VyqV8LJl3d394zvd7ZeH84Txg+C5555bRoSwcSQsArHTDjhwNPOpIzfWEfUp5syZt2bTpk2b6SBTWICQEGfzF59rG9w0uhlokuE6DBrF3AKQl5e3dNWqVWv4nRGAvgRyV8SjHdFEEJuQNH/dunX/NmvWrGCMCEbpoaOCUbUiY90B7/fhFyDBMbkEnTQQ0iOPPLLi/vvvzxNOkwQfuVyB0u8tmU8RTQSZaekZax5f8y/YxuAJmnCoDqgZhWl1B3zmlZ5L2+bEv5iYn58v6Xt3n0HJxXyC2zB79uwspXICb8Ix2BKlH9soxRABZg25U6eiOkB1gnNhBaiDDqvw4IMPPhQeHjWLPyARVMwQgLsiHu2IIoJJk6YsWPnowyuRRsgsACHQbUA/7X47YEWQ4FhQNeD3AOg+WhsLF/5Eso9TmE1GE3SLzIcY4LAOF4gaYVFxQewIV0qBiSKCyMiIKPyQkxsFfdikTk+V7KNVCl+FnGiPFyBwx7G9HbR6oyJA5uMYKTQSpJ4TUSKKioqMJCIQ9sQlPS0jQ9gUHYWvHz+JAKUVfRc044YDwnAt9TRcIgLJftFFFBEQsx2IH8LCEG+xIf6CZL+BRPJGgXxHJg3qPBwWGHtIoYIgcUg2/lMyk+MNGI0m57foCZ6wAhTqW6CaodUDcYL74hIbUURAPHojJlX4+4tv0VoJwqbotLSo+uYLojub+gbDhQoKVoCOU2hra5PsuUQRgUbT3t7S0iLsiUvF5R9+EDZFp6H+Wj3yHeabevGegFb/tCpAb2pjY2MDvyMBooigvb1DQ0SgdvF3RKOmqkayOf6tGnUrfvWVvvjylCWgVQAVAfpDOjo6JLMEorFl62u7+IEiwuALUmr6RuwCUmUIW+6DsFwHddTV1XFhkXFZQpSiEx8fn3nwq0MXzRZb30CYm4HnJBkq7DnHC9AxFK7HkSbkf06r1ToPEPAd5OPHS1HtSPbRbtEcw6qqqmq93jSgHUwykN8mz+pWbyEFbx/hjaNdTksLTPGxY8eOysT90MgAmpubL32x/8BfqK+DybO4HzwPwBr3iXuj90n/LrT9BziUSAOVSjWg48zPz0dWVFS0m2zqnEfGMElJM5ZiCBlJAE6v1/eNnAHE3Alb7kGvRUmipaa6uto2d+7cfCE6yUhISM4uO1OuQXk2uXy6fjAo8bjvwaX/H3E+G53lVH7uYmdkZLxkv5MsOllZ96+6fv16X5VAEwZrmEzX6uFWIBEpNKEQ3rZt2/4sRCM5y5YvX0s/u4P7wzPR53LlZgLAM+P+6XUQAb1WS8J8Mvfnm4RovIWAKRgbSOv/+vr6voyn07rcobu7m1Or1cIex+3du7d4JIeZyYKClB988KdD1BIgA5GxmIHsOivJVcAAmT1Y/G1t/b+asn37jk8xO1qIxXuIjIycs3Xr1t2umUhLx+BEuhX0i6Xgk08+OT1Sw8tcSUpKunf7Ozs+dZbmfvpLeH81Bmhp/0ec52BKfExMzAwheO/D399/GoSAef+wAPARAK0mfgzqP6CU7du371RWVtYqIdgRZ8aMjAV79uw5im8qu2bw4MzG/mDBwxrgmTSaNl4AEJUQrFeTjJFApaWlbUgEmHh3IR40t2XLll0YtCqENap45plnXi8rK9NQUbuae0BFQMWBNRzchoYGLj8/71ehoaHJQlB3B5h8kvvkv/7mi/2HLmi7DJzBaO5rc2NxkP8wAaW9Q8tdqaqxvPDCpu05c+c/ERSulOxt4Z2QnDx93i9/+fwbf//6mxp83R3PAp8Ba/w6CxZs43m//rb46rPkXJT+sLDoKUIQI4bn3oIMEQw8CQubEDptRsqMWEJ0lFKp8FX4GowGo0rVokJ3cG1VVXVXV9dF4ZIxAfGBUhISkqbMTJ+ZOSUxMSk0PGyiw+6wdWq1HXV19bXVV6oqbrQ1N+k17JtEDAaDwWAwGAwGg8FgMBgMBoPBYDAYDAaDwWAwGAwGg8FgMEYzMtn/A8TW1aA/DYibAAAAAElFTkSuQmCC" transform="matrix(1 0 0 1 0.0039 -0.002)"></image>
+                    </svg>
+                </div>
+                <div class="icon-bar">
+                    <a class="boton-bar flex" href="#top"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 20 20" aria-hidden="true" class="nav-icon" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z"></path></svg>
+                        Home
+                    </a>
+                    <a class="boton-bar flex" href="#about"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" class="nav-icon" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M12 2.5a5.5 5.5 0 0 1 3.096 10.047 9.005 9.005 0 0 1 5.9 8.181.75.75 0 1 1-1.499.044 7.5 7.5 0 0 0-14.993 0 .75.75 0 0 1-1.5-.045 9.005 9.005 0 0 1 5.9-8.18A5.5 5.5 0 0 1 12 2.5ZM8 8a4 4 0 1 0 8 0 4 4 0 0 0-8 0Z"></path></svg>
+                        Sobre mi
+                    </a>
+                    <a class="boton-bar flex" href="#proyectos"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 640 512" class="nav-icon" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M392.8 1.2c-17-4.9-34.7 5-39.6 22l-128 448c-4.9 17 5 34.7 22 39.6s34.7-5 39.6-22l128-448c4.9-17-5-34.7-22-39.6zm80.6 120.1c-12.5 12.5-12.5 32.8 0 45.3L562.7 256l-89.4 89.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l112-112c12.5-12.5 12.5-32.8 0-45.3l-112-112c-12.5-12.5-32.8-12.5-45.3 0zm-306.7 0c-12.5-12.5-32.8-12.5-45.3 0l-112 112c-12.5 12.5-12.5 32.8 0 45.3l112 112c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256l89.4-89.4c12.5-12.5 12.5-32.8 0-45.3z"></path></svg>
+                        Proyectos
+                    </a>
+                    <a class="boton-bar flex" href="#contacto"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" class="nav-icon" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path fill="none" d="M0 0h24v24H0z"></path><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"></path></svg>
+                        Contacto
+                    </a>
+                </div>
+                <div>
+                    <a href="#" class="boton cv flex"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 20 20" aria-hidden="true" class="download-icon" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 17a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm3.293-7.707a1 1 0 011.414 0L9 10.586V3a1 1 0 112 0v7.586l1.293-1.293a1 1 0 111.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                        Mi CV
+                    </a>
+                </div>
+            </div>    
+        </nav>
+    </header>
+    <section id="background">
+        <!-- <div class="stars">
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+        </div> -->
+        <div id="particles-js"><canvas class="particles-js-canvas-el" width="920" height="645" style="width: 100%; height: 100%;"></canvas></div>
+
+    </section>
+
+    <section class="intro-grid">
+        <div class="intro">
+            <h1>Hola, soy Hugo Vidal</h1>
+            <p class="intro-text">Fusce viverra massa ac scelerisque porta. Praesent tempus et risus sed tincidunt.</p>
+            <div class="intro-redes">    
+                <a href="#" class="boton cv flex"><svg class="download-icon" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 20 20" aria-hidden="true" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 17a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm3.293-7.707a1 1 0 011.414 0L9 10.586V3a1 1 0 112 0v7.586l1.293-1.293a1 1 0 111.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                    Descarga mi CV</a>
+                <div class="redes-bot">
+                    <a href="#" class="boton">
+                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" id="socialHover" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg" style="font-size: 30px;"><path d="M444.17 32H70.28C49.85 32 32 46.7 32 66.89v374.72C32 461.91 49.85 480 70.28 480h373.78c20.54 0 35.94-18.21 35.94-38.39V66.89C480.12 46.7 464.6 32 444.17 32zm-273.3 373.43h-64.18V205.88h64.18zM141 175.54h-.46c-20.54 0-33.84-15.29-33.84-34.43 0-19.49 13.65-34.42 34.65-34.42s33.85 14.82 34.31 34.42c-.01 19.14-13.31 34.43-34.66 34.43zm264.43 229.89h-64.18V296.32c0-26.14-9.34-44-32.56-44-17.74 0-28.24 12-32.91 23.69-1.75 4.2-2.22 9.92-2.22 15.76v113.66h-64.18V205.88h64.18v27.77c9.34-13.3 23.93-32.44 57.88-32.44 42.13 0 74 27.77 74 87.64z"></path></svg>
+                    </a>
+                    <a href="#" class="boton">
+                        <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" id="socialHover" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg" style="font-size: 30px;"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path><path d="M9 18c-4.51 2-5-2-7-2"></path></svg>
+                    </a>
+                    <a href="https://app.hackthebox.com/profile/492324" class="boton">
+                        <span class="htb-icon"> </span>
+                    </a>
+                </div>
+            </div> 
+        </div>
+    </section>
+    
+    <section class="section about" id="about">
+        <div class="about-org">
+            <div class="gif-org">
+                <img class="gif" src="img/pixel.gif" alt="gif">
+            </div>
+            <div class="fade-up about-text in-anim">
+                <h2>Sobre mi</h2>
+                <p>is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy.</p>
+            </div>
+        </div>        
+    </section>
+
+    <section class="section proyectos" id="proyectos">
+        <h2>Proyectos</h2>
+        <div class="proyectos-org">
+        
+            <div class="proyecto">
+                <div>
+                    <h3>Aeris</h3>
+                    <p>Soy estudinte del grado de Ingenieria informatica en la universidad UC3M</p>
+                </div>
+            </div>
+        
+            <div class="proyecto">
+                <div class="proyecto-txt">
+                    <h3>Personalizacion linux</h3>
+                    <p>Curso Compleat Begginer de la plataforma Tryhackme</p>
+                </div>
+            </div>
+        
+            <div class="proyecto">
+                <div class="proyecto-txt">
+                    <h3>Curso Hackmadrid%27</h3>
+                    <p>Curso de inciacion al hacking de hackmadrid%27 y ganador del concurso de hacking etico realizado en la universidad Nebrija</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <section class="section skills" id="skills">
+        <h2>Skills</h2>
+        <div class="skills-org">
+            <p class="no-marg skills-txt">Making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text</p>
+            <div class="skills-bot-org">
+                <button id="len-btn" class="skills-bot btn-active">Lenguajes</button>
+                <Button id="sist-btn" class="skills-bot">Sistemas</Button>
+                <button id="soft-btn" class="skills-bot">Otros</button>
+            </div>
+            <div id="skills-divs">
+
+                <div id="len" class="lenguajes skill-grp">
+                    <div class="skill html">
+                        <h3><span class="icon-html skill-icon"></span></h3>
+                    </div>
+                    <div class="skill css">
+                        <h3><span class="icon-css skill-icon"></span></h3>
+                    </div>
+                    <div class="skill bash">
+                        <h3><span class="icon-bash skill-icon"></span></h3>
+                    </div>
+                    <div class="skill python">
+                        <h3><span class="icon-python skill-icon"></span></h3>
+                    </div>
+                </div>
+                <div id="sist" class="Sistemas skill-grp oculto">
+                    <div class="skill linux">
+                        <h3><span class="icon-linux skill-icon"></span></h3>
+                    </div>
+                    <div class="skill wifi">
+                        <h3><span class="icon-wifi skill-icon"></span></h3>
+                    </div>
+                    <div class="skill hacking">
+                        <h3>Ofensive security</h3>
+                    </div>
+                </div>
+                <div id="soft" class="skill-grp oculto">
+                    <div class="skill soft">
+                        <h3>Ordenado</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+    
+    <section class="section estudios" id="estudios">
+        <h2>Formacion</h2>
+        
+        <div class="estudios-org">
+        
+            <div class="estudio">
+                <div>
+                    <h3>Grado Ingenieria Informatica</h3>
+                    <p>Soy estudinte del grado de Ingenieria informatica en la universidad UC3M</p>
+                </div>
+            </div>
+        
+            <div class="estudio">
+                <img class="cert show-img" id="img" src="img/compleat_begginer.png" alt="compleat_begginer">
+                <div class="estudio-txt">
+                    <h3>Compleat Begginer Tryhackme</h3>
+                    <p>Curso Compleat Begginer de la plataforma Tryhackme</p>
+                </div>
+            </div>
+        
+            <div class="estudio">
+                <img class="cert show-img" id="img" src="img/hackmadrid.jpg" alt="hackmadrid">
+                <div class="estudio-txt">
+                    <h3>Curso Hackmadrid%27</h3>
+                    <p>Curso de inciacion al hacking de hackmadrid%27 y ganador del concurso de hacking etico realizado en la universidad Nebrija</p>
+                </div>
+            </div>
+        </div>    
+    </section>
+
+    <section class="section" id="contacto">
+        <h2>Contactame</h2>
+    </section>
+    
+    <script src="js/script.js"></script>
+    <script src="js/in-anim.js"></script>
+    <!-- <script src="js/img-in.js"></script> -->
+    <script src="particles/particles.js"></script>
+    <script src="particles/app.js"></script>
+</body>
+</html>
