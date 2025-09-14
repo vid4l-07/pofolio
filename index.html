@@ -8,9 +8,32 @@
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/stars.css">
     <link rel="stylesheet" href="css/skills.css">
+    <link rel="stylesheet" media="screen and (max-width: 480px)" href="css/movil.css">
     <title>Hugo Vidal</title>
 </head>
 <body>
+    <section class="background" id="background">
+        <!-- <div class="stars">
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+        </div> -->
+        <div id="particles-js"><canvas class="particles-js-canvas-el" width="920" height="645" style="width: 100%; height: 100%;"></canvas></div>
+
+    </section>
+
     <header>
         <nav class="bar">
             <div class="bar-org">
@@ -42,31 +65,10 @@
             </div>    
         </nav>
     </header>
-    <section id="background">
-        <!-- <div class="stars">
-            <div class="star"></div>
-            <div class="star"></div>
-            <div class="star"></div>
-            <div class="star"></div>
-            <div class="star"></div>
-            <div class="star"></div>
-            <div class="star"></div>
-            <div class="star"></div>
-            <div class="star"></div>
-            <div class="star"></div>
-            <div class="star"></div>
-            <div class="star"></div>
-            <div class="star"></div>
-            <div class="star"></div>
-            <div class="star"></div>
-        </div> -->
-        <div id="particles-js"><canvas class="particles-js-canvas-el" width="920" height="645" style="width: 100%; height: 100%;"></canvas></div>
-
-    </section>
 
     <section class="intro-grid">
         <div class="intro">
-            <h1>Hola, soy Hugo Vidal</h1>
+            <h1>Hola, soy <span class="grad-txt">Hugo Vidal</span></h1>
             <p class="intro-text">Fusce viverra massa ac scelerisque porta. Praesent tempus et risus sed tincidunt.</p>
             <div class="intro-redes">    
                 <a href="#" class="boton cv flex"><svg class="download-icon" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 20 20" aria-hidden="true" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 17a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm3.293-7.707a1 1 0 011.414 0L9 10.586V3a1 1 0 112 0v7.586l1.293-1.293a1 1 0 111.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
@@ -88,58 +90,69 @@
             </div> 
         </div>
     </section>
-    
+        
     <section class="section about" id="about">
         <div class="about-org">
             <div class="gif-org">
                 <img class="gif" src="img/pixel.gif" alt="gif">
             </div>
             <div class="fade-up about-text in-anim">
-                <h2>Sobre mi</h2>
+                <h2>Sobre <span class="grad-txt">Mi</span></h2>
                 <p>is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy.</p>
             </div>
         </div>        
     </section>
 
-    <section class="section proyectos" id="proyectos">
-        <h2>Proyectos</h2>
-        <div class="proyectos-org">
+    <section class="section estudios" id="estudios">
+        <h2 class="grad-txt">Formacion</h2>
         
-            <div class="proyecto">
-                <div>
-                    <h3>Aeris</h3>
-                    <p>Soy estudinte del grado de Ingenieria informatica en la universidad UC3M</p>
+        <div class="estudios-org">
+        
+            <div class="estudio">
+                <div class="under-txt">
+                    <h3 class="proyecto-mrg">Grado Ingenieria Informatica</h3>
+                </div>
+                <p>Soy estudinte del grado de Ingenieria informatica en la universidad UC3M.</p>
+            </div>
+        
+            <div class="estudio">
+                <div class="under-txt">
+                    <h3 class="proyecto-mrg">Compleat Begginer Tryhackme</h3>
+                </div>
+                <p>Curso Compleat Begginer de la plataforma Tryhackme.</p>
+                <div class="cert">
+                    <a class="cert-bot" href="img/compleat_begginer.png" target="_blank" rel="noopener noreferrer">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" data-astro-cid-j7pv25f6=""> <path d="M20 4V8M20 4H16M20 4L14 10M18 11V16C18 17.1046 17.1046 18 16 18H8C6.89543 18 6 17.1046 6 16V8C6 6.89543 6.89543 6 8 6H13" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" data-astro-cid-j7pv25f6=""></path> </svg>
+                        Cert</a>
                 </div>
             </div>
         
-            <div class="proyecto">
-                <div class="proyecto-txt">
-                    <h3>Personalizacion linux</h3>
-                    <p>Curso Compleat Begginer de la plataforma Tryhackme</p>
+            <div class="estudio">
+                <div class="under-txt">
+                    <h3 class="proyecto-mrg">Curso Hackmadrid%27</h3>
+                </div>
+                <p>Curso de inciacion al hacking de hackmadrid%27 y ganador del concurso de hacking etico realizado en la universidad Nebrija.</p>
+                <div class="cert">
+                    <a class="cert-bot" href="img/hackmadrid.jpg" target="_blank" rel="noopener noreferrer">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" data-astro-cid-j7pv25f6=""> <path d="M20 4V8M20 4H16M20 4L14 10M18 11V16C18 17.1046 17.1046 18 16 18H8C6.89543 18 6 17.1046 6 16V8C6 6.89543 6.89543 6 8 6H13" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" data-astro-cid-j7pv25f6=""></path> </svg>
+                        Cert</a>
                 </div>
             </div>
-        
-            <div class="proyecto">
-                <div class="proyecto-txt">
-                    <h3>Curso Hackmadrid%27</h3>
-                    <p>Curso de inciacion al hacking de hackmadrid%27 y ganador del concurso de hacking etico realizado en la universidad Nebrija</p>
-                </div>
-            </div>
-        </div>
+        </div>    
     </section>
 
-    
     <section class="section skills" id="skills">
-        <h2>Skills</h2>
+        <h2 class="grad-txt">Skills</h2>
         <div class="skills-org">
-            <p class="no-marg skills-txt">Making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text</p>
-            <div class="skills-bot-org">
-                <button id="len-btn" class="skills-bot btn-active">Lenguajes</button>
+                <p class="no-marg sec-txt">Una lista de tecnologias sobre las que he estado aprendiendo y mis aptitudes.</p>
+            </div>
+        <div class="skills-bot-org">
+            <button id="len-btn" class="skills-bot btn-active">Lenguajes</button>
                 <Button id="sist-btn" class="skills-bot">Sistemas</Button>
                 <button id="soft-btn" class="skills-bot">Otros</button>
             </div>
+            
             <div id="skills-divs">
-
                 <div id="len" class="lenguajes skill-grp">
                     
                     <div class="skill">
@@ -201,45 +214,137 @@
                         <li>Curioso</li>
                         <li>Resolutivo</li>
                         <li>Trabjo en equipo</li>
-
+    
                     </ul>
                 </div>
             </div>
-        </div>
         
     </section>
-    
-    <section class="section estudios" id="estudios">
-        <h2>Formacion</h2>
+
+    <section class="section proyectos" id="proyectos">
+        <h2 class="grad-txt">Proyectos</h2>
+        <div class="proyectos-org">
         
-        <div class="estudios-org">
-        
-            <div class="estudio">
-                <div>
-                    <h3>Grado Ingenieria Informatica</h3>
-                    <p>Soy estudinte del grado de Ingenieria informatica en la universidad UC3M</p>
+            <div class="proyecto">
+                <div class="under-txt">
+                    <h3 class="proyecto-mrg">Aeris</h3>
+                </div>
+                <div class="proyect-len">
+
+                    <div class="proyecto-icon-org">
+                        <svg class="proyecto-icon" stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" id="socialHover" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path><path d="M9 18c-4.51 2-5-2-7-2"></path></svg>
+                        <span class="proyecto-icon-txt">Ciberseguridad</span>
+                    </div>
+
+                    <div class="proyecto-icon-org">
+                        <svg class="proyecto-icon" stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" id="socialHover" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path><path d="M9 18c-4.51 2-5-2-7-2"></path></svg>
+                        <span class="proyecto-icon-txt">Redes wifi</span>
+                    </div>
+
+                    <div class="proyecto-icon-org">
+                        <svg class="proyecto-icon" stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" id="socialHover" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path><path d="M9 18c-4.51 2-5-2-7-2"></path></svg>
+                        <span class="proyecto-icon-txt">Bash</span>
+                    </div>
+                    
+                </div>
+                <p class="proyecto-mrg">Soy estudinte del grado de Ingenieria informatica en la universidad UC3M</p>
+                <div class="border-top">
+                    <a class="proyecto-bot" href="https://github.com/vid4l-07/Aeris" target="_blank" rel="noopener noreferrer">
+                        <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" id="socialHover" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path><path d="M9 18c-4.51 2-5-2-7-2"></path></svg>
+                        Github</a>
                 </div>
             </div>
         
-            <div class="estudio">
-                <div class="estudio-txt">
-                    <h3>Compleat Begginer Tryhackme</h3>
-                    <p>Curso Compleat Begginer de la plataforma Tryhackme</p>
+            <div class="proyecto">
+                <div class="under-txt">
+                    <h3 class="proyecto-mrg">Personalizacion linux</h3>
+                </div>
+                <div class="proyect-len">
+
+                    <div class="proyecto-icon-org">
+                        <svg class="proyecto-icon" stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" id="socialHover" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path><path d="M9 18c-4.51 2-5-2-7-2"></path></svg>
+                        <span class="proyecto-icon-txt">Linux</span>
+                    </div>
+
+                    <div class="proyecto-icon-org">
+                        <svg class="proyecto-icon" stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" id="socialHover" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path><path d="M9 18c-4.51 2-5-2-7-2"></path></svg>
+                        <span class="proyecto-icon-txt">Bash</span>
+                    </div>
+                </div>
+                <p class="proyecto-mrg">Curso Compleat Begginer de la plataforma Tryhackme</p>
+                <div class="border-top">
+                    <a class="proyecto-bot" href="https://github.com/vid4l-07/Aeris" target="_blank" rel="noopener noreferrer">
+                        <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" id="socialHover" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path><path d="M9 18c-4.51 2-5-2-7-2"></path></svg>
+                        Github</a>
                 </div>
             </div>
         
-            <div class="estudio">
-                <div class="estudio-txt">
-                    <h3>Curso Hackmadrid%27</h3>
-                    <p>Curso de inciacion al hacking de hackmadrid%27 y ganador del concurso de hacking etico realizado en la universidad Nebrija</p>
+            <div class="proyecto">
+                <div class="under-txt">
+                    <h3 class="proyecto-mrg">Flipper</h3>
+                </div>
+                <div class="proyect-len">
+
+                    <div class="proyecto-icon-org">
+                        <svg class="proyecto-icon" stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" id="socialHover" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path><path d="M9 18c-4.51 2-5-2-7-2"></path></svg>
+                        <span class="proyecto-icon-txt">Ciberseguridad</span>
+                    </div>
+
+                    <div class="proyecto-icon-org">
+                        <svg class="proyecto-icon" stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" id="socialHover" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path><path d="M9 18c-4.51 2-5-2-7-2"></path></svg>
+                        <span class="proyecto-icon-txt">Windows</span>
+                    </div>
+                    
+                    <div class="proyecto-icon-org">
+                        <svg class="proyecto-icon" stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" id="socialHover" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path><path d="M9 18c-4.51 2-5-2-7-2"></path></svg>
+                        <span class="proyecto-icon-txt">Powershell</span>
+                    </div>
+                </div>
+                <p class="proyecto-mrg">Curso de inciacion al hacking de hackmadrid%27 y ganador del concurso de hacking etico realizado en la universidad Nebrija</p>
+                <div class="border-top">
+                    <a class="proyecto-bot" href="https://github.com/vid4l-07/Aeris" target="_blank" rel="noopener noreferrer">
+                        <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" id="socialHover" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path><path d="M9 18c-4.51 2-5-2-7-2"></path></svg>
+                        Github</a>
                 </div>
             </div>
-        </div>    
+            <div class="proyecto">
+                <div class="under-txt">
+                    <h3 class="proyecto-mrg">Flipper</h3>
+                </div>
+                <p class="proyecto-mrg">Curso de inciacion al hacking de hackmadrid%27 y ganador del concurso de hacking etico realizado en la universidad Nebrija</p>
+                <div class="border-top">
+                    <a class="proyecto-bot" href="https://github.com/vid4l-07/Aeris" target="_blank" rel="noopener noreferrer">
+                        <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" id="socialHover" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path><path d="M9 18c-4.51 2-5-2-7-2"></path></svg>
+                        Github</a>
+                </div>
+            </div>
+        </div>
     </section>
 
     <section class="section" id="contacto">
-        <h2>Contactame</h2>
+        <h2 class="grad-txt">Contactame</h2>
+        <p class="sec-txt no-marg" style="width: 40%;">Si te ha interesado contactame por correo o atraves de mis redes sociales.</p>
+        <div class="contacto-bg">
+            <div class="contacto">
+                <a class="boton-contacto" href="mailto:hugovima09@gmail.com">
+                    <svg class="icon-contact" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg>
+                    hugovima09@gmail.com</a>
+                <a class="boton-contacto" href="#">
+                    <svg class="icon-contact" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" id="socialHover" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg" style="font-size: 30px;"><path d="M444.17 32H70.28C49.85 32 32 46.7 32 66.89v374.72C32 461.91 49.85 480 70.28 480h373.78c20.54 0 35.94-18.21 35.94-38.39V66.89C480.12 46.7 464.6 32 444.17 32zm-273.3 373.43h-64.18V205.88h64.18zM141 175.54h-.46c-20.54 0-33.84-15.29-33.84-34.43 0-19.49 13.65-34.42 34.65-34.42s33.85 14.82 34.31 34.42c-.01 19.14-13.31 34.43-34.66 34.43zm264.43 229.89h-64.18V296.32c0-26.14-9.34-44-32.56-44-17.74 0-28.24 12-32.91 23.69-1.75 4.2-2.22 9.92-2.22 15.76v113.66h-64.18V205.88h64.18v27.77c9.34-13.3 23.93-32.44 57.88-32.44 42.13 0 74 27.77 74 87.64z"></path></svg>
+                    Linkedin</a>
+                <a class="boton-contacto" href="#">
+                    <svg class="icon-contact" stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" id="socialHover" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg" style="font-size: 30px;"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path><path d="M9 18c-4.51 2-5-2-7-2"></path></svg>
+                    Github</a>
+                <a class="boton-contacto" href="#">
+                    <svg class="icon-contact" stroke="currentColor" fill="none" stroke-width="3.5" width="59" height="44" viewBox="0 0 59 44" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M37.1937 0C36.6265 1.0071 36.1172 2.04893 35.6541 3.11392C31.2553 2.45409 26.7754 2.45409 22.365 3.11392C21.9136 2.04893 21.3926 1.0071 20.8254 0C16.6928 0.70613 12.6644 1.94475 8.84436 3.69271C1.27372 14.9098 -0.775214 25.8374 0.243466 36.6146C4.67704 39.8906 9.6431 42.391 14.9333 43.9884C16.1256 42.391 17.179 40.6893 18.0819 38.9182C16.3687 38.2815 14.7133 37.4828 13.1274 36.5567C13.5442 36.2557 13.9493 35.9432 14.3429 35.6422C23.6384 40.0179 34.4039 40.0179 43.711 35.6422C44.1046 35.9663 44.5097 36.2789 44.9264 36.5567C43.3405 37.4943 41.6852 38.2815 39.9604 38.9298C40.8633 40.7009 41.9167 42.4025 43.109 44C48.3992 42.4025 53.3653 39.9137 57.7988 36.6377C59.0027 24.1358 55.7383 13.3007 49.1748 3.70429C45.3663 1.95633 41.3379 0.717706 37.2053 0.0231518L37.1937 0ZM19.3784 29.9816C16.5192 29.9816 14.1461 27.3886 14.1461 24.1821C14.1461 20.9755 16.4266 18.371 19.3669 18.371C22.3071 18.371 24.6455 20.9871 24.5992 24.1821C24.5529 27.377 22.2956 29.9816 19.3784 29.9816ZM38.6639 29.9816C35.7931 29.9816 33.4431 27.3886 33.4431 24.1821C33.4431 20.9755 35.7236 18.371 38.6639 18.371C41.6042 18.371 43.9309 20.9871 43.8846 24.1821C43.8383 27.377 41.581 29.9816 38.6639 29.9816Z"/></svg>
+                    Discord</a>
+            </div>
+        </div>
     </section>
+
+    <footer class="section footer">
+        <p>Hugo Vidal - 2025</p>
+    </footer>
     
     <script src="js/script.js"></script>
     <script src="js/in-anim.js"></script>
