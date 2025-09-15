@@ -41,6 +41,10 @@
     width: 90%;
 }
 
+.icon-bar a{
+    pointer-events: none;
+}
+
 .menu-active {
     height: fit-content;
     width: 100vw;
