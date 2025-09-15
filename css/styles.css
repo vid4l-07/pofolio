@@ -117,9 +117,7 @@ h2 {
     justify-items: center;
     justify-content: space-between;
     align-items: center;
-    width: 95%;
-
-    
+    width: 95%;    
 }
 
 .logo {
@@ -145,6 +143,10 @@ h2 {
 
 .nav-icon {
     margin-right: 15px;
+}
+
+.boton-menu {
+    display: none;
 }
 
 .boton-bar {
@@ -176,7 +178,11 @@ h2 {
     color: var(--text);
 }
 
-.boton-bar.active {
+.boton-bar.activo:after {
+  transform: scaleX(1);
+}
+
+.boton-activo {
     color: var(--text);
 }
 
@@ -349,7 +355,7 @@ h2 {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 40px;
+    gap: 10%;
     margin-top: 50px;
 }
 
@@ -380,7 +386,7 @@ h2 {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 30px;
+    gap: 8%;
     margin-top: 50px;
     /* display: block; */
     transition: all 0.3s;
@@ -440,10 +446,37 @@ h2 {
     z-index: 1;
 }
 
+
+
 .proyecto-icon {
-    font-size: 20px;
+    width: 20px;
+    height: 20px;
+    display: block;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
     color: var(--txt2);
 }
+
+.proyecto-hacking {
+    background-image: url(../img/security.png);
+}
+.proyecto-wifi {
+    background-image: url(../img/wifi.png);
+}
+.proyecto-bash {
+    background-image: url(../img/bash.png);
+}
+.proyecto-linux {
+    background-image: url(../img/linux.png);
+}
+.proyecto-windows {
+    background-image: url(../img/widows.svg);
+    color: var(--txt2);
+}
+.proyecto-wifi {
+    background-image: url(../img/wifi.png);
+} 
 
 .proyecto-icon-txt {
     font-size: 20px;

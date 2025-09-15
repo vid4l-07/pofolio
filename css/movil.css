@@ -5,6 +5,52 @@
     align-items: center;
 }
 
+.boton-menu {
+    width: 40px;
+    height: 32px;
+    display: block;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+    background-image: url(../img/menu.png);
+}
+
+.bar-org {
+    position: relative;
+}
+
+.icon-bar {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    margin-top: 1px;
+    gap: 15px;
+    height: 0;
+    opacity: 0;
+    width: 100vw;
+    transition: height 0.5s, opacity 0.5s;
+    background-color: #0e0e0ed7;
+    /* backdrop-filter: blur(20px); */
+    margin-left: 0;
+}
+
+.icon-bar a:not(:first-child) {
+    border-top: solid 1px var(--border);
+    padding-top: 15px;
+    width: 90%;
+}
+
+.menu-active {
+    height: fit-content;
+    width: 100vw;
+    opacity: 1;
+}
+
+.cv-bar {
+    display: none;
+}
+
 .about-org {
     flex-direction: column;
 }
