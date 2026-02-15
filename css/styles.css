@@ -51,7 +51,6 @@ body {
     width: 100%;
     padding-top: 7%;
     background-color: #0e0e0e;
-    /* background-color: var(--bg-sec); */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -282,14 +281,8 @@ h2 {
     flex-direction: column;
     align-items: left;
     width: 60%;
-    color: #00000000;
-    transform: translateY(20%) translateX(10%);
-    transition: all 0.7s;
-}
-
-.about-text.visible {
-    transform: translateY(0) translateX(0);
     color: var(--text);
+    transition: all 0.7s;
 }
 
 .estudios-org {

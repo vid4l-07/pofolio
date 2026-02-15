@@ -114,6 +114,25 @@
     border-color: #72a824;
 }
 
+.icon-cpp {
+    background-image: url(../img/cpp.svg);
+}
+
+.name-cpp {
+    color: #0589d7;
+    border-color: #00589d;
+}
+
+.cpp {
+    background-color: #00589d50;
+    box-shadow: #00589d40 0px 0px 50px;
+}
+
+.cpp:hover {
+    box-shadow: #00589d88 0px 0px 30px;
+    border-color: #00589d;
+}
+
 .icon-python {
     background-image: url(../img/python.svg);
 }
