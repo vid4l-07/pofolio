@@ -160,11 +160,6 @@ button {
 	color: var(--light-txt);
 }
 
-.download-icon {
-    color: var(--txt); 
-    font-size: 20px;
-    margin-right: 5px;
-}
 
 .icon-bar {
     display: flex;
@@ -258,6 +253,7 @@ button {
 }
 
 .boton:hover {
+	color: var(--light-txt);
     cursor: pointer;
 }
 
@@ -275,18 +271,6 @@ button {
     text-align: center;
 	border: solid 0px var(--light-txt);
     transition: all 0.3s;
-}
-
-.download-icon {
-	transition: all 0.3s;
-}
-
-.cv:hover{
-	color: var(--light-txt);
-}
-
-.cv:hover .download-icon {
-	color: var(--light-txt);
 }
 
 .estudios-org {
