@@ -3,6 +3,8 @@ const icon = document.getElementById("icon");
 
   if (localStorage.getItem("theme") === "dark") {
     document.body.classList.add("dark");
+	icon.classList.remove("fa-sun");
+	icon.classList.add("fa-moon");
   }
 
   button.addEventListener("click", () => {
