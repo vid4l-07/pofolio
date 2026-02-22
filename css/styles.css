@@ -262,20 +262,21 @@ button {
     cursor: pointer;
 }
 
-.htb-icon {
-    width: 40px;
-    height: 32px;
-    display: block;
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center center;
-    background-image: url(../img/htb.svg);
+.boton-cv {
+    color: var(--light-txt);
+    text-decoration: none;
+    border: solid 1px var(--light-txt);
+    padding: 10px;
+    margin: 3px;
+    border-radius: 7px;
+	box-shadow: var(--box-shadow) 0px 0px 1px;
+    transition: all 0.3s;
 }
 
-.cv {
-    text-align: center;
-	border: solid 0px var(--light-txt);
-    transition: all 0.3s;
+.boton-cv:hover {
+	color: var(--txt);
+	box-shadow: var(--box-shadow) 0px 0px 2px;
+    cursor: pointer;
 }
 
 .estudios-org {
@@ -296,12 +297,13 @@ button {
 	border-radius: 7px;
     border: solid 1px var(--light-txt);
     box-shadow: var(--box-shadow) 0px 0px 1px;
-    transition: background-color 0.3s, box-shadow 0.3s, border-color 0.3s, opacity 0.3s;
+    transition: all 0.3s;
     width: 100%;
 }
 
 .estudio:hover {
     box-shadow: var(--box-shadow) 0px 0px 3px;
+	transform: translateX(5px);
 }
 
 .estudios-org:hover .estudio{
