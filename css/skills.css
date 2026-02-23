@@ -167,6 +167,26 @@
     border-color: #DFAF22;
 }
 
+.icon-git {
+    background-image: url(../img/git.png);
+}
+
+.name-git {
+    color: #f34f29;
+	
+    border-color: #f34f29;
+}
+
+.git {
+    background-color: #f34f2973;
+    box-shadow: #f34f2950 0px 0px 50px;
+}
+
+.git:hover {
+    box-shadow: #f34f2988 0px 0px 30px;
+    border-color: #f34f29#DFAF22;
+}
+
 .icon-wifi {
     background-image: url(../img/wifi.png);
 }
