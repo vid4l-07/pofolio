@@ -16,6 +16,15 @@
 }
 
 .bar{
+	border: none;
+	backdrop-filter: none;
+}
+
+.bar-cv {
+	display: none;
+}
+
+.icon-bar {
 	display: none;
 }
 
@@ -27,4 +36,3 @@
     margin-top: 40px;
     width: fit-content;
 }
-
