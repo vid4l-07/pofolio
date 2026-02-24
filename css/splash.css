@@ -22,12 +22,12 @@
 
 .typewriter { 
 	color: var(--txt);
-	font: bold 2.5rem Monaco, monospace;
+	font: bold 3rem Monaco, monospace;
 	border-right: 0.1em solid var(--txt);
 	width: 9em;
 	width: 7ch; 
 	margin: 2em 1em;
 	white-space: nowrap;
 	overflow: hidden;
-	animation: typing 1.9s steps(7, end), blink-caret 0.5s step-end infinite alternate;
+	animation: typing 1.7s steps(7, end), blink-caret 0.5s step-end infinite alternate;
 }

@@ -266,7 +266,7 @@ button {
 .boton-cv {
     color: var(--light-txt);
     text-decoration: none;
-    border: solid 1px var(--light-txt);
+    /* border: solid 1px var(--light-txt); */
     padding: 10px;
     margin: 3px;
     border-radius: 7px;
@@ -296,7 +296,7 @@ button {
     align-content: flex-start;
     padding: 10px 20px;
 	border-radius: 7px;
-    border: solid 1px var(--light-txt);
+    /* border: solid 1px var(--light-txt); */
     box-shadow: var(--box-shadow) 0px 0px 1px;
     transition: all 0.3s;
     width: 100%;
@@ -354,7 +354,8 @@ button {
 .skills-bot {
     background-color: transparent;
     color: var(--light-txt);
-    border: solid 1px var(--light-txt);
+    /* border: solid 1px var(--light-txt); */
+	border: none;
     border-radius: 7px;
     box-shadow: var(--box-shadow) 0px 0px 1px;
     padding: 10px;
@@ -402,7 +403,7 @@ button {
 .proyecto {
     display: grid;
     align-items: center;
-    border: solid 1px var(--light-txt);
+    /* border: solid 1px var(--light-txt); */
     padding: 20px;
     border-radius: 10px;
     box-shadow: var(--box-shadow) 0px 0px 1px;
@@ -526,7 +527,7 @@ button {
 .contacto-bg {
     width: fit-content;
     border-radius: 10px;
-    border: solid 1px var(--light-txt);
+    /* border: solid 1px var(--light-txt); */
     box-shadow: var(--box-shadow) 0px 0px 1px;
     margin-top: 50px;
     padding: 20px;
