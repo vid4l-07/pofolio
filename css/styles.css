@@ -394,7 +394,7 @@ button {
 .proyectos-org {
     display: grid;
     justify-content: center;
-    grid: auto / 220px 220px 220px 220px;
+    grid: auto / 220px 220px 220px;
     gap: 60px;
     margin-top: 40px;
     width: fit-content;
